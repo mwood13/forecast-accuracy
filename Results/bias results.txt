@@ -1,0 +1,146 @@
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                           Estimate Std. Error  t value  Pr(>|t|)    
+anyTG                     -0.357031   0.137043 -2.60525 0.0093324 ** 
+Landfall                   0.847315   0.360355  2.35134 0.0189211 *  
+temp_mean                  0.003852   0.000391  9.84991 < 2.2e-16 ***
+anyTG:last_anyTG_Hit       0.398898   0.139705  2.85529 0.0043987 ** 
+Landfall:last_anyTG_Hit   -0.813888   0.362074 -2.24785 0.0248274 *  
+anyTG:last_anyTG_NoHit     0.415318   0.137158  3.02803 0.0025318 ** 
+Landfall:last_anyTG_NoHit -0.654746   0.366368 -1.78713 0.0742538 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898228     Adj. R2: 0.591131
+                 Within R2: 8.658e-4
+
+
+
+
+
+
+#################### break out by timing of last treatment ####################
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                             Estimate Std. Error   t value   Pr(>|t|)    
+anyTG                        0.107755   0.015752  6.840643 1.4564e-11 ***
+Landfall                     0.186112   0.060232  3.089935 2.0636e-03 ** 
+temp_mean                    0.003867   0.000391  9.879559  < 2.2e-16 ***
+anyTG:last_earlyTG_Hit      -0.095871   0.035356 -2.711614 6.8234e-03 ** 
+Landfall:last_earlyTG_Hit   -0.109343   0.076701 -1.425563 1.5434e-01    
+anyTG:last_earlyTG_NoHit    -0.060336   0.017241 -3.499601 4.8884e-04 ***
+Landfall:last_earlyTG_NoHit -0.031260   0.073219 -0.426939 6.6953e-01    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.89823     Adj. R2: 0.591129
+                Within R2: 8.608e-4
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                           Estimate Std. Error   t value   Pr(>|t|)    
+anyTG                      0.088050   0.009019  9.763124  < 2.2e-16 ***
+Landfall                   0.188493   0.042930  4.390697 1.2642e-05 ***
+temp_mean                  0.003855   0.000391  9.855427  < 2.2e-16 ***
+anyTG:last_midTG_Hit      -0.043708   0.031525 -1.386456 1.6595e-01    
+Landfall:last_midTG_Hit   -0.145913   0.071417 -2.043116 4.1332e-02 *  
+anyTG:last_midTG_NoHit    -0.063200   0.012823 -4.928658 9.8564e-07 ***
+Landfall:last_midTG_NoHit -0.045805   0.065191 -0.702633 4.8247e-01    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898219     Adj. R2: 0.59114 
+                 Within R2: 8.862e-4
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                            Estimate Std. Error  t value   Pr(>|t|)    
+anyTG                       0.085343   0.008550  9.98159  < 2.2e-16 ***
+Landfall                    0.137775   0.036424  3.78256 1.6549e-04 ***
+temp_mean                   0.003855   0.000391  9.85398  < 2.2e-16 ***
+anyTG:last_lateTG_Hit      -0.043227   0.026111 -1.65549 9.8174e-02 .  
+Landfall:last_lateTG_Hit   -0.140323   0.064087 -2.18955 2.8813e-02 *  
+anyTG:last_lateTG_NoHit    -0.076220   0.015081 -5.05394 5.2433e-07 ***
+Landfall:last_lateTG_NoHit  0.126146   0.065847  1.91576 5.5713e-02 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898208     Adj. R2: 0.59115 
+                 Within R2: 9.111e-4
+
+
+
+Breaking out by last time seems pointless and unintuitive. 
+
+
+
+################ break out by current timing with any past ###################
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                           Estimate Std. Error   t value  Pr(>|t|)    
+earlyTG                   -0.371022   0.139086 -2.667579 0.0077774 ** 
+Landfall                   0.489734   0.327809  1.493961 0.1355367    
+temp_mean                  0.003854   0.000391  9.845327 < 2.2e-16 ***
+earlyTG:last_anyTG_Hit     0.420753   0.143276  2.936655 0.0034024 ** 
+Landfall:last_anyTG_Hit   -0.446590   0.331531 -1.347054 0.1783022    
+earlyTG:last_anyTG_NoHit   0.424010   0.138987  3.050707 0.0023500 ** 
+Landfall:last_anyTG_NoHit -0.272018   0.332471 -0.818171 0.4134762    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898247     Adj. R2: 0.591114
+                 Within R2: 8.236e-4
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                           Estimate Std. Error  t value   Pr(>|t|)    
+midTG                     -0.583152   0.170212 -3.42604 0.00064020 ***
+Landfall                   0.986509   0.393598  2.50639 0.01237271 *  
+temp_mean                  0.003884   0.000391  9.93859  < 2.2e-16 ***
+midTG:last_anyTG_Hit       0.678826   0.175419  3.86975 0.00011682 ***
+Landfall:last_anyTG_Hit   -0.991704   0.395389 -2.50817 0.01231085 *  
+midTG:last_anyTG_NoHit     0.624573   0.170361  3.66618 0.00026064 ***
+Landfall:last_anyTG_NoHit -0.770273   0.398952 -1.93074 0.05382933 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898264     Adj. R2: 0.591099
+                 Within R2: 7.861e-4
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,519
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                           Estimate Std. Error  t value   Pr(>|t|)    
+lateTG                    -0.722884   0.177125 -4.08121 4.8786e-05 ***
+Landfall                   1.208594   0.372174  3.24739 1.2078e-03 ** 
+temp_mean                  0.003920   0.000391 10.02235  < 2.2e-16 ***
+lateTG:last_anyTG_Hit      0.775823   0.183471  4.22860 2.5921e-05 ***
+Landfall:last_anyTG_Hit   -1.192624   0.374009 -3.18876 1.4783e-03 ** 
+lateTG:last_anyTG_NoHit    0.732820   0.178154  4.11342 4.2561e-05 ***
+Landfall:last_anyTG_NoHit -0.976614   0.378931 -2.57729 1.0116e-02 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898282     Adj. R2: 0.591082
+                 Within R2: 7.453e-4
+
+
+These seem to follow more closely to the difference regressions. 

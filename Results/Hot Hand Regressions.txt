@@ -1,0 +1,218 @@
+################ Hit Streak #################
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+           Estimate Std. Error   t value   Pr(>|t|)    
+anyTG      0.056600   0.006877  8.230469 6.5184e-16 ***
+Landfall   0.219077   0.033780  6.485436 1.4584e-10 ***
+anyTG_hit  0.000586   0.015531  0.037714 9.6992e-01    
+land_hit  -0.194169   0.043018 -4.513620 7.2195e-06 ***
+temp_mean  0.003845   0.000391  9.835498  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898201     Adj. R2: 0.591142
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+              Estimate Std. Error   t value   Pr(>|t|)    
+anyTG         0.057171   0.006905  8.279490 4.4510e-16 ***
+Landfall      0.198427   0.035241  5.630619 2.4003e-08 ***
+anyTG_hit    -0.040365   0.038865 -1.038600 2.9927e-01    
+land_hit      0.016710   0.089065  0.187617 8.5122e-01    
+anyTG_hit_sq  0.019056   0.016916  1.126508 2.6025e-01    
+land_hit_sq  -0.110682   0.036554 -3.027889 2.5330e-03 ** 
+temp_mean     0.003849   0.000391  9.845699  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898195     Adj. R2: 0.591146
+                 Within R2: 8.873e-4
+
+
+
+
+### Miss Streak ### 
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+            Estimate Std. Error   t value   Pr(>|t|)    
+anyTG       0.125446   0.012581  9.971079  < 2.2e-16 ***
+Landfall   -0.007244   0.032948 -0.219858 8.2603e-01    
+anyTG_miss -0.006551   0.001097 -5.970174 3.4087e-09 ***
+land_miss   0.024181   0.004670  5.177583 2.7743e-07 ***
+temp_mean   0.003878   0.000390  9.936930  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898131     Adj. R2: 0.591206
+                 Within R2: 0.001028
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+               Estimate Std. Error   t value   Pr(>|t|)    
+anyTG          0.072372   0.014882  4.863152 1.3634e-06 ***
+Landfall      -0.003337   0.037974 -0.087874 9.3000e-01    
+anyTG_miss     0.006755   0.002852  2.368358 1.8078e-02 *  
+land_miss      0.044237   0.012656  3.495391 4.9651e-04 ***
+anyTG_miss_sq -0.000451   0.000101 -4.463741 9.0770e-06 ***
+land_miss_sq  -0.001450   0.000626 -2.317963 2.0675e-02 *  
+temp_mean      0.003883   0.000390  9.963701  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898086     Adj. R2: 0.591245
+                 Within R2: 0.001129
+
+
+
+### accuracy ###
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+           Estimate Std. Error   t value   Pr(>|t|)    
+anyTG      0.123355   0.012331 10.003461  < 2.2e-16 ***
+Landfall   0.002006   0.031356  0.063967 9.4901e-01    
+anyTG_acc  0.006401   0.001077  5.944479 3.9651e-09 ***
+land_acc  -0.024428   0.004424 -5.522048 4.3864e-08 ***
+temp_mean  0.003876   0.000390  9.935184  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898131     Adj. R2: 0.591206
+                 Within R2: 0.00103 
+
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+              Estimate Std. Error   t value   Pr(>|t|)    
+anyTG         0.074806   0.013848  5.402032 8.4399e-08 ***
+Landfall      0.031215   0.031923  0.977822 3.2843e-01    
+anyTG_acc    -0.006424   0.002652 -2.421892 1.5637e-02 *  
+land_acc     -0.039326   0.010646 -3.694080 2.3401e-04 ***
+anyTG_acc_sq -0.000443   0.000096 -4.595085 4.9434e-06 ***
+land_acc_sq  -0.001311   0.000562 -2.331671 1.9938e-02 *  
+temp_mean     0.003880   0.000390  9.956694  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898082     Adj. R2: 0.591249
+                 Within R2: 0.001139
+
+
+
+
+
+#### hit plus miss ####
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+            Estimate Std. Error  t value   Pr(>|t|)    
+anyTG       0.133662   0.013714  9.74659  < 2.2e-16 ***
+Landfall    0.106131   0.050003  2.12248 3.4071e-02 *  
+anyTG_hit  -0.041220   0.017121 -2.40753 1.6261e-02 *  
+land_hit   -0.124459   0.052961 -2.35001 1.8988e-02 *  
+anyTG_miss -0.006999   0.001159 -6.04115 2.2383e-09 ***
+land_miss   0.013557   0.005682  2.38590 1.7244e-02 *  
+temp_mean   0.003864   0.000390  9.90960  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898112     Adj. R2: 0.591221
+                 Within R2: 0.001071
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+               Estimate Std. Error   t value   Pr(>|t|)    
+anyTG          0.079634   0.017327  4.595858 4.9256e-06 ***
+Landfall      -0.016280   0.079495 -0.204794 8.3778e-01    
+anyTG_hit     -0.065208   0.042499 -1.534343 1.2530e-01    
+land_hit       0.290483   0.128487  2.260804 2.4010e-02 *  
+anyTG_hit_sq   0.025078   0.017508  1.432377 1.5238e-01    
+land_hit_sq   -0.181654   0.043585 -4.167803 3.3726e-05 ***
+anyTG_miss     0.005754   0.003113  1.848111 6.4915e-02 .  
+land_miss      0.046519   0.019106  2.434802 1.5094e-02 *  
+anyTG_miss_sq -0.000425   0.000105 -4.033840 5.9534e-05 ***
+land_miss_sq  -0.001527   0.000822 -1.859005 6.3353e-02 .  
+temp_mean      0.003883   0.000390  9.964831  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898065     Adj. R2: 0.591261
+                 Within R2: 0.001175
+
+
+
+# continuous accuracy
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                Estimate Std. Error   t value   Pr(>|t|)    
+anyTG           0.156393   0.015001 10.425762  < 2.2e-16 ***
+Landfall        0.033371   0.043905  0.760058 4.4742e-01    
+anyTG_acc_cont  0.007559   0.001070  7.065886 3.1988e-12 ***
+land_acc_cont  -0.006960   0.003992 -1.743400 8.1606e-02 .  
+temp_mean       0.003875   0.000390  9.936514  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.89811     Adj. R2: 0.591225
+                Within R2: 0.001075
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 464,513
+Fixed-effects: fips: 900,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+                   Estimate Std. Error  t value   Pr(>|t|)    
+anyTG              0.141683   0.016358  8.66153  < 2.2e-16 ***
+Landfall           0.080749   0.043877  1.84035 6.6047e-02 .  
+anyTG_acc_cont     0.004583   0.001726  2.65468 8.0787e-03 ** 
+land_acc_cont      0.006680   0.004594  1.45412 1.4626e-01    
+anyTG_acc_cont_sq -0.000119   0.000059 -2.01182 4.4537e-02 *  
+land_acc_cont_sq   0.001451   0.000248  5.85217 6.7937e-09 ***
+temp_mean          0.003884   0.000390  9.95129  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.898075     Adj. R2: 0.591255
+                 Within R2: 0.001153
+
+
+
+Policy: What if east coast forecast could get to gulf level. 
+
+
+Redefine previous foecat variable
+
+Or
+
+Simulate forecasts for all time. 

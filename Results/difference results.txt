@@ -1,0 +1,102 @@
+Regression looks at the week of assignment versus treatment
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+          Estimate Std. Error t value   Pr(>|t|)    
+Landfall  0.152595   0.026520 5.75400 1.1923e-08 ***
+temp_mean 0.003893   0.000401 9.69953  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.903552     Adj. R2: 0.592905
+                 Within R2: 6.24e-4 
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+          Estimate Std. Error t value   Pr(>|t|)    
+anyTG     0.043595   0.006721 6.48660 1.4430e-10 ***
+Landfall  0.116186   0.027109 4.28588 2.0153e-05 ***
+temp_mean 0.003854   0.000401 9.62005  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.903514     Adj. R2: 0.592939
+                 Within R2: 7.1e-4  
+
+
+
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+          Estimate Std. Error t value   Pr(>|t|)    
+earlyTG   0.037706   0.007287 5.17437 2.8172e-07 ***
+Landfall  0.135656   0.026592 5.10143 4.1071e-07 ***
+temp_mean 0.003858   0.000401 9.62083  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.903528     Adj. R2: 0.592927
+                 Within R2: 6.79e-4 
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+          Estimate Std. Error t value   Pr(>|t|)    
+midTG     0.030111   0.009216 3.26728 1.1267e-03 ** 
+Landfall  0.133357   0.027267 4.89082 1.1880e-06 ***
+temp_mean 0.003869   0.000400 9.66258  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.903542     Adj. R2: 0.592914
+                 Within R2: 6.467e-4
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+           Estimate Std. Error   t value   Pr(>|t|)    
+lateTG    -0.000546   0.010754 -0.050736 9.5955e-01    
+Landfall   0.153083   0.028256  5.417640 7.7442e-08 ***
+temp_mean  0.003893   0.000401  9.717097  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.903552     Adj. R2: 0.592904
+                 Within R2: 6.24e-4 
+
+
+
+
+
+OLS estimation, Dep. Var.: log(total_rev_per_cap)
+Observations: 495,301
+Fixed-effects: fips: 906,  month: 12,  year: 12
+Standard-errors: Clustered (fips) 
+           Estimate Std. Error  t value   Pr(>|t|)    
+earlyTG    0.037771   0.008975  4.20833 2.8291e-05 ***
+midTG      0.022785   0.012447  1.83057 6.7493e-02 .  
+lateTG    -0.039357   0.013056 -3.01461 2.6449e-03 ** 
+Landfall   0.156292   0.028219  5.53855 3.9978e-08 ***
+temp_mean  0.003852   0.000401  9.61319  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.90352     Adj. R2: 0.592932
+                Within R2: 6.967e-4
